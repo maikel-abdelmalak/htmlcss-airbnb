@@ -3,8 +3,28 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body > div{
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+
 .roma {
     background-image: url(img/roma.jpg);
+}
+
+.milano{
+    background-image: url(img/milano.jpg);
+}
+
+.torino{
+    background-image: url(img/torino.jpg);
+}
+
+.sfondo{
+    background-color: rgba(11, 11, 11, 0.5);
     width: 100vw;
     height: 100vh;
     background-size: cover;
@@ -12,24 +32,12 @@
 }
 
 h1 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 80px;
     position: absolute;
     top:50%;
     left: 50%;
-    transform: translate(-50% -50%);
+    transform: translate(-50%, -50%);
     color: white;
-}
-
-.milano{
-    background-image: url(img/milano.jpg);
-    width: 100vw;
-    height: 100vh;
-    background-size: cover;
-    position: relative;
-}
-.torino{
-    background-image: url(img/torino.jpg);
-    width: 100vw;
-    height: 100vh;
-    background-size: cover;
-    position: relative;
+    z-index: 2;
 }
